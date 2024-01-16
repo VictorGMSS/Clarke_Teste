@@ -8,6 +8,7 @@ class Fornecedor(models.Model):
     limite_minimo_kwh = models.PositiveIntegerField()
     num_total_clientes = models.PositiveIntegerField()
     avaliacao_media = models.FloatField()
+    logo_url = models.URLField(blank=True, null=True)
 
     def __str__(self):
         return self.nome

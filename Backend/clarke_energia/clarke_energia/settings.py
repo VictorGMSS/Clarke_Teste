@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'fornecedores',
     'corsheaders',
+    'fornecedores.tests',
 ]
 
 MIDDLEWARE = [
@@ -119,6 +120,7 @@ REST_FRAMEWORK = {
     ],
 }
 
+TEST_RUNNER = 'django.test.runner.DiscoverRunner'
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/

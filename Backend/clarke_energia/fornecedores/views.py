@@ -3,7 +3,6 @@ from django.http import JsonResponse
 from .models import Fornecedor
 import logging
 logger = logging.getLogger(__name__)
-
 def escolher_fornecedor(request):
     if request.method == 'POST':
         consumo_mensal = request.POST.get('consumo_mensal')
@@ -17,7 +16,8 @@ def escolher_fornecedor(request):
                      'custo_por_kwh': fornecedor.custo_por_kwh,
                      'limite_minimo_kwh': fornecedor.limite_minimo_kwh,
                      'num_total_clientes': fornecedor.num_total_clientes,
-                     'avaliacao_media': fornecedor.avaliacao_media}
+                     'avaliacao_media': fornecedor.avaliacao_media,
+                     'logo_url': fornecedor.logo_url}
                     for fornecedor in fornecedores_disponiveis]
             return JsonResponse({'fornecedores': data})
         else:

@@ -21,6 +21,7 @@ const FornecedorList = ({ fornecedores }) => {
             }`}
             onClick={() => handleFornecedorClick(fornecedor.nome)}
           >
+            <img src={fornecedor.logo_url}></img>
             <h2 className="text-xl font-semibold text-white">{fornecedor.nome}</h2>
             <p className="text-white">Estado: {fornecedor.estado}</p>
             <p className="text-white">Custo por kWh: {fornecedor.custo_por_kwh}</p>
