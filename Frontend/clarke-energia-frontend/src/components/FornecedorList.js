@@ -24,7 +24,9 @@ const FornecedorList = ({ fornecedores }) => {
             <h2 className="text-xl font-semibold text-white">{fornecedor.nome}</h2>
             <p className="text-white">Estado: {fornecedor.estado}</p>
             <p className="text-white">Custo por kWh: {fornecedor.custo_por_kwh}</p>
+            <p className="text-white">Limite mínimo de kWh: {fornecedor.limite_minimo_kwh}</p>
             <p className="text-white">Total de clientes: {fornecedor.num_total_clientes}</p>
+            <p className="text-white">Avaliação média dos clientes: {fornecedor.avaliacao_media}</p>
           </div>
         ))}
       </div>
