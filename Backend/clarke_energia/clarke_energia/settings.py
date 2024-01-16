@@ -56,7 +56,7 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-ROOT_URLCONF = 'clarke_energia.urls'
+ROOT_URLCONF = 'vercel_app.urls'
 
 TEMPLATES = [
     {
@@ -79,7 +79,7 @@ CORS_ALLOWED_ORIGINS = [
     # outras origens permitidas, se necessário
 ]
 
-WSGI_APPLICATION = 'clarke_energia.wsgi.application'
+WSGI_APPLICATION = 'vercel_app.wsgi.app'
 
 
 # Database
